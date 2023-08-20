@@ -1,12 +1,15 @@
 import cv2
 import keyboard
+import sys
 
+print = sys.stdout.write
 count = int(input("starting frame: "))
 
 while count < 6572:
 
     if keyboard.is_pressed("space"):
-        print("You pressed space")
+        print("You pressed space at")
+        print("frame: " + str(count))
         break
 
     imgcode = str()
@@ -24,7 +27,7 @@ while count < 6572:
                 imgcode = (imgcode + "1")
             else:
                 imgcode = (imgcode + "0")
-                
+
 
     def add(pix):
         if (int(imgcode[pix])) > 0:
@@ -47,8 +50,5 @@ while count < 6572:
             braille = str(braille + str(add(center)))#1
             a = (a + (str(chr((int(braille, 2))+10240))))
         a = str(a + '\n')
-
     print(a)
     count +=1
-
-print("finished!")
