@@ -1,4 +1,4 @@
 # bad apple on python terminal using braille codes
 
-my second python project
-just uploaded on github to save it, the braille converting is working fine, but it lags quite a lot when run on terminal...
+my second python project.
+just uploaded on github to save it, the braille converting code is working fine, but it goes up and down quite a lot when i run this on vscode terminal...
